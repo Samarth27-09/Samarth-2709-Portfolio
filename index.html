@@ -1,1 +1,245 @@
-ECHO is off.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samarth Saxena | Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo-block">
+          <a class="logo" href="#home">Samarth</a>
+          <span class="logo-terminal mono">samarth@portfolio:~$</span>
+        </div>
+        <button
+          id="nav-toggle"
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <nav id="primary-navigation" class="nav-menu" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button id="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon-light" aria-hidden="true">☀️</span>
+            <span class="theme-icon-dark" aria-hidden="true">🌙</span>
+          </button>
+          <a href="assets/Samarth-Saxena-Resume.pdf" class="btn btn-primary">Download Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-terminal">
+            <p class="hero-eyebrow mono">Hi!</p>
+            <h1 class="hero-title">I'm Samarth</h1>
+            <p class="hero-typed-wrapper mono">
+              <span id="hero-typed-text" class="hero-typed-text"></span>
+              <span class="hero-cursor">▌</span>
+            </p>
+            <p class="hero-description">
+              I use data, product thinking, and structured analysis to turn messy problems into measurable business impact.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="assets/Samarth-Saxena-Resume.pdf" class="btn btn-secondary">Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-about">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow mono">[ about ]</p>
+            <h2>About Me</h2>
+            <p class="section-subtitle">A data-driven problem solver with a product mindset.</p>
+          </div>
+          <div class="about-layout">
+            <div class="about-text">
+              <p>
+                I am Samarth Saxena, a final-year B.Tech student in Materials and Metallurgical Engineering at MANIT Bhopal. I combine a rigorous engineering foundation with business curiosity to diagnose bottlenecks and design scalable solutions.
+              </p>
+              <p>
+                My experience spans analytics projects across dashboards, ML prototypes, experimentation, and supply chain optimization. I love working with SQL, Python, Power BI, and Excel to turn raw datasets into crisp narratives that drive confident decisions.
+              </p>
+              <p>
+                Whether the challenge is reducing freight variability, improving product funnels, or prioritizing backlog items, I partner with stakeholders to frame the problem, model scenarios, and recommend pragmatic next steps focused on impact.
+              </p>
+            </div>
+            <div class="about-photo">
+              <div class="profile-card">
+                <img src="assets/images/profile-placeholder.png" alt="Portrait of Samarth" />
+                <p class="mono">samarth@portfolio:~$ curious-analyst --focus business-impact</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-projects">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow mono">[ projects ]</p>
+            <h2>Projects</h2>
+            <p class="section-subtitle">Selected work where I used data and experiments to drive decisions.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card-header">
+                <h3>E-Commerce Profitability &amp; Growth Dashboard</h3>
+                <p>
+                  Built a SQL + Power BI stack to analyze 24 months of GMV, logistics, and marketing spend for a marketplace. Surface trends, blended margins, and demand cohorts with drill-through slices.
+                </p>
+              </div>
+              <ul class="project-tags">
+                <li>SQL</li>
+                <li>Power BI</li>
+                <li>Excel Modeling</li>
+              </ul>
+              <p class="project-impact"><span class="mono">Impact:</span> Highlighted high-margin SKUs and reduced freight leakage by 12%.</p>
+              <a href="#" class="project-link">View case study</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-header">
+                <h3>Customer Churn Analysis &amp; Prediction</h3>
+                <p>
+                  Modeled churn risk for a subscription SaaS using Python (Pandas, scikit-learn) and product telemetry. Combined cohort analysis, logistic regression, and uplift simulations to prioritize retention actions.
+                </p>
+              </div>
+              <ul class="project-tags">
+                <li>Python</li>
+                <li>EDA</li>
+                <li>Machine Learning</li>
+              </ul>
+              <p class="project-impact"><span class="mono">Impact:</span> Identified at-risk users early and informed a 15% ARPU lift plan.</p>
+              <a href="#" class="project-link">View case study</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-header">
+                <h3>User Retention &amp; A/B Testing for a Mobile Game</h3>
+                <p>
+                  Analyzed funnel telemetry and ran A/B tests on onboarding missions. Created Power BI dashboards for product squads, instrumented SQL views, and measured week-1 retention and monetization.
+                </p>
+              </div>
+              <ul class="project-tags">
+                <li>A/B Testing</li>
+                <li>Python</li>
+                <li>Product Analytics</li>
+              </ul>
+              <p class="project-impact"><span class="mono">Impact:</span> Delivered experiments that boosted D7 retention by 6 pts.</p>
+              <a href="#" class="project-link">View case study</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-skills">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow mono">[ skills ]</p>
+            <h2>Skills</h2>
+            <p class="section-subtitle">Tools and capabilities I use to ship value.</p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <p class="skill-label mono">[ data ]</p>
+              <h3>Data Skills</h3>
+              <ul class="skill-list">
+                <li>SQL, Advanced Excel (Power Query, VBA)</li>
+                <li>Power BI, Tableau dashboards</li>
+                <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+                <li>EDA, Cohort/Funnel, Regression &amp; Classification</li>
+                <li>A/B Testing, Time Series, ETL automation</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <p class="skill-label mono">[ product ]</p>
+              <h3>Product &amp; Business Skills</h3>
+              <ul class="skill-list">
+                <li>Problem Framing &amp; Requirement Gathering</li>
+                <li>KPI Definition, Business Case Evaluation</li>
+                <li>Process Optimization &amp; Continuous Improvement</li>
+                <li>Data Storytelling &amp; Stakeholder Communication</li>
+                <li>Roadmapping, Experiment Design, Prioritization</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <p class="skill-label mono">[ tools ]</p>
+              <h3>Tools</h3>
+              <ul class="skill-list">
+                <li>Power BI, Tableau, Excel, Google Sheets</li>
+                <li>Jira, Notion, Figma</li>
+                <li>Git &amp; GitHub, VS Code</li>
+                <li>PowerPoint, Miro, Confluence</li>
+                <li>Collaboration suites (Teams, Slack)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow mono">[ contact ]</p>
+            <h2>Contact</h2>
+            <p class="section-subtitle">Let’s talk about data, products, or opportunities.</p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-details">
+              <p>Best way to reach me is via email or LinkedIn.</p>
+              <ul>
+                <li><span class="mono">Email:</span> <a href="mailto:samarth.nitb@gmail.com">samarth.nitb@gmail.com</a></li>
+                <li>
+                  <span class="mono">LinkedIn:</span>
+                  <a href="https://linkedin.com/in/samarthnitb" target="_blank" rel="noreferrer">linkedin.com/in/samarthnitb</a>
+                </li>
+              </ul>
+            </div>
+            <form class="contact-form" action="#" method="post">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" required />
+
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" required />
+
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="4" required></textarea>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 Samarth Saxena</p>
+      <p class="mono">samarth@portfolio:~$ built with HTML, CSS &amp; JavaScript</p>
+    </footer>
+
+    <script src="scripts/cipher.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
